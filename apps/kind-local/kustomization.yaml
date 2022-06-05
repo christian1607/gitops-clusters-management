@@ -4,7 +4,7 @@ metadata:
   name: emoji-voto
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 1m0s
   path: ./apps/kind-local
   prune: true
   sourceRef:
