@@ -1,12 +1,5 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: emoji-voto
-  namespace: flux-system
-spec:
-  interval: 1m0s
-  path: ./apps/kind-local
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: emoji-voto
+resources:
+- emoji-voto.yaml
+
